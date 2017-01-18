@@ -1,6 +1,8 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
 @import url(//fonts.googleapis.com/css?family=Ruslan+Display);
 @import url(//fonts.googleapis.com/css?family=Roboto);
+@import url(//fonts.googleapis.com/css?family=Arsenal);
+@import url(//fonts.googleapis.com/css?family=Arsenal|Playfair+Display);
 
 
 .main {
@@ -8,6 +10,23 @@
     color:red;
     border-style:dotted;
     font-family: 'Open Sans', sans-serif;
+    text-align:center;
+}
+
+.red {
+    background-color:rgb(255,255,255);
+    color:red;
+    border-style:dotted;
+    font-family: 'Arsenal', sans-serif;
+font-family: 'Playfair Display', serif;
+    text-align:center;
+}
+
+.blue {
+    background-color:rgb(255,255,255);
+    color:blue;
+    border-style:dotted;
+    font-family: 'Arsenal', sans-serif;
     text-align:center;
 }
 

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <title>Midterm</title>
+    </head>
+    <body class="red" align="middle">
+        <a href="index.html">Home</a>
+        <a href="aboutme.html">About Me</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="midterm.html">Midterm</a>
+        <h1 class="blue">
+            Class Schedule
+        </h1>
+       <table align="center">
+            <tr>
+                <td>Period</td>
+                <td>Class</td>
+            </tr>
+            <tr>
+                <td>1st</td>
+                <td>AP Computer Science Principles</td>
+            </tr>
+            <tr>
+                <td>2nd</td>
+                <td>AP Biology</td>
+            </tr>
+            <tr>
+                <td>3rd</td>
+                <td>College Readiness Math</td>
+            </tr>
+            <tr>
+                <td>4th</td>
+                <td>Chemistry(Honors)</td>
+            </tr>
+            <tr>
+                <td>5th</td>
+                <td>College Readiness Reading</td>
+            </tr>
+            <tr>
+                <td>6th</td>
+                <td>Art 1</td>
+            </tr>
+            <tr>
+                <td>7th</td>
+                <td>Algebra 2</td>
+            </tr>
+            <tr>
+                <td>8th</td>
+                <td>AP English and Composition</td>
+            </tr>
+        </table>
+<br>
+
+
+<h1 class="blue">Ap Computer Principles</h1>
+
+<br>
+        <div class="w3-content" style="max-width:800px" align="center">
+  <img class="mySlides" src="images/Favorite.jpg" style="width:50%" align="center">
+  <img class="mySlides" src="images/Kim.jpg" style="width:50%" align="center">
+  <img class="mySlides" src="images/Midterm.png" style="width:50%" align="center">
+</div>
+
+<div class="w3-center" >
+  <div class="w3-section">
+    <button class="w3-btn" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-btn" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3-btn demo" onclick="currentDiv(1)">1</button>
+  <button class="w3-btn demo" onclick="currentDiv(2)">2</button>
+  <button class="w3-btn demo" onclick="currentDiv(3)">3</button>
+</div>
+
+        <br>
+        <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>
+
+<h4 class="red">Ap Computer Principles is my most favorite class because of how engaging and exciting all the work is. You get to really use everything youve learned. plus its super satisfying to see all the different components come together.</h4>
+
+
+        
+    </body>
+</html>
